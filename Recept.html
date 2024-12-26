@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепты</title>
+    <link rel = "stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: #cccccc;">Рецепты</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="Glavnaia.html">Главная</a></li>
+            <li><a href="Sedobnie.html">Cъедобные грибы</a></li>
+            <li><a href="Nesedobnie.html">Не съедобные грибы</a></li>
+        </ul>
+    </nav>
+<div class="container">
+    <font size="5">Скоро вы сможете прикреплять здесь свои рецепты.</font>
+    <h2>Прикрепление фотографии</h2>
+    <p>Пожалуйста, выберите фотографию, которую вы хотите загрузить.</p>
+
+    <form action="/upload.php" method="post" enctype="multipart/form-data">
+        <label for="photo">Выберите фотографию:</label><br>
+        <input type="file" id="photo" name="photo"><br><br>
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .profile-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+</style>
+<a href="profile.html">
+<img src="profil.jpg" alt="Profile" class="profile-icon">
+</a>
+</body>
+</html>

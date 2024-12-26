@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш профиль</title>
+    <link rel="stylesheet" href="styleprofile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ваш профиль</h1>
+        <input type="text" id="nickname" placeholder="Введите ваш никнейм">
+        <div class="color-buttons">
+            <button class="gradientles" onclick="changeBackgroundColor('linear-gradient(135deg, #228B22, #8B4513)')">Цвет леса</button>
+            <button class="gradientmoh" onclick="changeBackgroundColor('linear-gradient(135deg, #32CD32, #8B7765)')">Цвет мха</button>
+            <button class="gradientzemla" onclick="changeBackgroundColor('linear-gradient(135deg, #8B4513, #CD853F)')">Цвет земли</button>
+            <button class="gradientosen" onclick="changeBackgroundColor('linear-gradient(135deg, #FFD700, #FF4500)')">Цвет осени</button>
+        </div>
+        <div class="navigation-buttons">
+            <a href="Glavnaia.html"><button class="Glavnaia">Главная страница</button></a>
+            <a href="Sedobnie.html"><button class="Sedobnie">Съедобные грибы</button></a>
+            <a href="Nesedobnie.html"><button class="Nesedobnie">Несъедобные грибы</button></a>
+            <a href="Recept.html"><button class="Recept">Рецепты</button></a>
+        </div>
+    </div>
+
+    <script>
+        function changeBackgroundColor(gradient) {
+            document.body.style.background = gradient;
+        }
+    </script>
+</body>
+</html>
